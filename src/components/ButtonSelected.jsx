@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-function ButtonSelected({ className, btnName,isActive, ...prop }) {
+function ButtonSelected({ className, btnName, isActive, ...prop }) {
   return (
     <button
       className={`
@@ -9,19 +9,16 @@ function ButtonSelected({ className, btnName,isActive, ...prop }) {
         active:scale-95
         transition-all duration-300
         ${
-          isSelected
-            ? // --- Styles when SELECTED ---
-              "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-transparent"
-            : // --- Styles when NOT selected ---
-              "bg-transparent border border-purple-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:border-transparent"
+          isActive // --- Styles when SELECTED ---
+            ? "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-transparent" // --- Styles when NOT selected ---
+            : "bg-transparent border border-purple-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:border-transparent"
         }
         ${className}
       `}
       // Add the onClick handler and spread other props
-      onClick={handleClick}
       {...prop}
     >
-      {btnname}
+      {btnName}
     </button>
   );
 }
