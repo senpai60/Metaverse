@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 function CardDyanamic({ project }) {
   if (!project) return null;
   return (
-    <div className="w-full min-h-120 flex gap-30 py-2">
+    <div className="w-full min-h-120 flex gap-30 py-2 mb-40">
       {/* Image */}
       <div className="image-card w-120 h-120 overflow-hidden">
         <img

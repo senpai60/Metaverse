@@ -2,6 +2,7 @@ import React from 'react'
 import PageOne from './pages/home/PageOne'
 import PageTwo from './pages/home/PageTwo'
 import PageThree from './pages/home/PageThree'
+import PageFour from './pages/home/PageFour'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <PageOne/>
       <PageTwo/>
       <PageThree/>
+      <PageFour/>
     </div>
   )
 }
