@@ -8,7 +8,7 @@ function PageOne() {
       <NavigationBar />
       <div
         className="
-        bg-[linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.4),rgba(0,0,0,0.9)),url(/Images/mainbg.jpg)] bg-cover bg-center 
+        bg-[linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,1)),url(/Images/mainbg.jpg)] bg-cover bg-center 
         PageOne w-full h-screen px-40 relative"
       >
         <div className="hero-box w-3/4 h-2/3 absolute top-1/2 -translate-y-1/2 flex flex-col justify-center">

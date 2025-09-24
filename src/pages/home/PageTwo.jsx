@@ -1,18 +1,17 @@
 import React from 'react';
 import CardAbout from '../../components/CardAbout';
-import { cardsData } from '../../data/cardsData';
+import { cardsData } from '../../../data/cardsData.js';
+import PageHeadings from '../../components/PageHeadings.jsx';
 
 function PageTwo() {
   return (
-    <div className="page-2 px-40">
+    <div className="page-2 px-40 bg-gradient-to-b from-black via-[#140b27] to-[bg-gradient-to-b from-black via-[#05141D] to-black] 
+    ">
       {/* Headings */}
-      <div className="about-head text-center py-20">
-        <h5 className="text-2xl font-light mb-2">Main Feature</h5>
-        <h3 className="text-5xl font-medium mb-2">Utilize The Functionality</h3>
-      </div>
+      <PageHeadings para="Utilize The Functionality" heading={'Main Feature'} />
 
       {/* Cards Section */}
-      <div className="about-card-section w-full min-h-[150px] bg-blue-950 py-10 flex flex-wrap gap-6 justify-center">
+      <div className="about-card-section w-full min-h-[150px] py-10 grid grid-cols-3 gap-6 justify-center">
         {cardsData.map((card, index) => (
           <CardAbout
             key={index}
